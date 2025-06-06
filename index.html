@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gayatri Bhavana Addala | AI & ML Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="particles-container" id="particles-js"></div>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="#home">GB</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-switch">
+                <input type="checkbox" id="theme-toggle">
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate__animated animate__fadeInDown">Gayatri Bhavana Addala</h1>
+            <h2 class="animate__animated animate__fadeInUp">AI & Machine Learning Engineer</h2>
+            <p class="animate__animated animate__fadeIn">Transforming data into intelligent solutions through 
+                <span class="typewriter" id="typewriter"></span>
+            </p>
+            <div class="cta-buttons animate__animated animate__fadeIn">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#contact" class="btn secondary-btn">Let's Connect</a>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <p>Scroll Down</p>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="neural-network-container" id="neural-network"></div>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Passionate about Artificial Intelligence, Machine Learning, and Data Science</p>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    Hi! I'm Gayatri Bhavana Addala — a Computer Science graduate student at VCU with a passion for using technology to make a difference. My curiosity for how things work, especially in the realm of AI and machine learning, is what first sparked my journey into tech — and it’s only grown since then.
+                </p>
+                <p>
+                    I’m especially drawn to Generative AI, anomaly detection, and cybersecurity — areas where creativity meets real-world impact. I’ve worked hands-on with tools like TensorFlow, Keras, and Scikit-learn, and built models using CNNs, LSTMs, and GANs that bring ideas to life..
+                </p>
+                <p>
+                    When I'm not coding, I enjoy experimenting with new technologies and diving into research just for the fun of it. I'm that person who constantly saves tech reels on Instagram to my "cool ideas" folder — because you never know when inspiration will strike! I also enjoy working with teams, learning from others, and finding creative ways to apply my skills to real-world challenges.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="C:\Users\gayat\OneDrive\Desktop\personal projects\portfolio\IMG_2768.jpg" alt="Gayatri Bhavana Addala" />
+            </div>
+        </div>
+        <a href="#contact" class="contact-link">Get in Touch</a>
+    </section>
+    
+    <!-- Revised Projects Section with Horizontal Boxes and Modal -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">Exploring the intersection of AI, cybersecurity, and data science</p>
+            
+            <!-- Horizontal Project Boxes -->
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-box" data-project="gan">
+                    <h3>GAN-Based Anomaly Detection</h3>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-box" data-project="cnn-lstm">
+                    <h3>CNN-LSTM Intrusion Detection</h3>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-box" data-project="sign-language">
+                    <h3>Sign Language Detection</h3>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-box" data-project="drowsiness">
+                    <h3>Driver Drowsiness Detection</h3>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Project Modal -->
+        <div id="project-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div id="modal-content">
+                    <!-- Project details will be populated here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">A glimpse of my professional journey</p>
+        <div class="experience-list">
+            <div class="experience-item">
+                <h3 class="job-title">Research Assistant</h3>
+                    <p class="company-name">Virginia Commonwealth University</p>
+                    <p class="dates">May 2023 - August 2023</p>
+                    <div class="job-description">
+                        <p>Conducted research on using Generative Adversarial Networks (GANs) for synthetic data generation to enhance anomaly detection in CAN bus systems for autonomous vehicles.</p>
+                        <p>Key contributions:</p>
+                        <ul>
+                            <li>Developed and fine-tuned a custom GAN architecture with LeakyReLU, batch normalization, and optimized hyperparameters for realistic data synthesis.</li>
+                            <li>Performed exploratory data analysis on CAN bus communication logs and implemented preprocessing including MinMax scaling and one-hot encoding.</li>
+                            <li>Addressed data imbalance and feature redundancy to improve anomaly detection model training.</li>
+                            <li>Achieved adversarial equilibrium with discriminator accuracy converging near 50%, indicating high-quality synthetic data generation.</li>
+                            <li>Demonstrated competitive results compared to existing GAN approaches through stable loss metrics and statistical similarity in generated data.</li>
+                            <li>Proposed implications for cybersecurity applications and generalization to other domains with limited anomaly data.</li>
+                        </ul>
+                    </div>
+
+            </div>
+            <div class="experience-item">
+                <h3 class="job-title">QA Analyst Intern</h3>
+                    <p class="company-name">Ameripro Corporation</p>
+                    <p class="dates">June 2022 - August 2022</p>
+                    <div class="job-description">
+                        <p>Contributed to quality assurance efforts for mobile and web applications by performing thorough testing and detailed documentation in collaboration with a senior analyst.</p>
+                        <p>Key responsibilities:</p>
+                        <ul>
+                            <li>Executed manual and automated test cases to validate UI/UX, functionality, and performance across browsers and devices.</li>
+                            <li>Developed detailed test documentation including bug reports, test logs, and checklists to ensure traceability and reproducibility.</li>
+                            <li>Created and maintained automated test scripts using Selenium for regression testing.</li>
+                            <li>Used JIRA to report, prioritize, and track bugs throughout the development lifecycle.</li>
+                            <li>Collaborated in Agile workflows, participating in daily stand-ups and sprint planning meetings.</li>
+                        </ul>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="research" id="research">
+        <h2 class="section-title">Research</h2>
+        <p class="section-subtitle">Exploring the intersection of AI, ML, and complex tasks</p>
+        <div class="research-list">
+            <div class="research-item">
+                <h3 class="research-title">Generative Adversarial Networks for Anomaly Detection in Autonomous Vehicles</h3>
+                    <div class="research-description">
+                        <p>Led research on applying GANs to enhance anomaly detection within CAN bus systems in autonomous vehicles, addressing the challenges of data scarcity and real-time threat identification.</p>
+                        <p>Research highlights:</p>
+                        <ul>
+                            <li>Designed a custom GAN architecture with LeakyReLU activations and batch normalization for stable synthetic anomaly generation.</li>
+                            <li>Performed extensive data preprocessing including normalization and one-hot encoding to optimize model input quality.</li>
+                            <li>Generated high-fidelity synthetic attack data that improved downstream detection models.</li>
+                            <li>Achieved adversarial balance with discriminator accuracy ~50%, validating the realism of generated data.</li>
+                            <li>Demonstrated potential to reduce false positives and improve safety-critical communication in vehicle systems.</li>
+                        </ul>
+                        <p>The research findings contributed to improved cybersecurity protocols for autonomous vehicle communication systems and were presented at the <strong>International Conference on Machine Learning Applications (ICMLA)</strong>.</p>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <p class="section-subtitle">Tools and Technologies I've worked with and learning</p>
+            
+           <div class="skills-container">
+    <!-- Python -->
+    <div class="skill">
+        <i class="fab fa-python"></i>
+        <h3>Python</h3>
+        <div class="progress-bar">
+            <div class="progress" data-percent="80"></div>
+        </div>
+        <span class="percent">80%</span>
+    </div>
+
+    <!-- Excel -->
+    <div class="skill">
+        <i class="fas fa-file-excel"></i>
+        <h3>Excel</h3>
+        <div class="progress-bar">
+            <div class="progress" data-percent="85"></div>
+        </div>
+        <span class="percent">85%</span>
+    </div>
+
+    <!-- SQL -->
+    <div class="skill">
+        <i class="fas fa-database"></i>
+        <h3>SQL</h3>
+        <div class="progress-bar">
+            <div class="progress" data-percent="70"></div>
+        </div>
+        <span class="percent">70%</span>
+    </div>
+
+    <!-- Pandas -->
+    <div class="skill">
+        <i class="fas fa-code"></i>
+        <h3>Pandas</h3>
+        <div class="progress-bar">
+            <div class="progress" data-percent="60"></div>
+        </div>
+        <span class="percent">60%</span>
+    </div>
+
+    <!-- Scikit-learn -->
+<div class="skill">
+    <i class="fas fa-robot"></i>
+    <h3>Scikit-learn</h3>
+    <div class="progress-bar">
+        <div class="progress" data-percent="50"></div>
+    </div>
+    <span class="percent">50%</span>
+</div>
+
+</div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Connect With Me</h2>
+            <p class="section-subtitle">Let's stay in touch through socials</p>
+            
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form id="contact-form" action="your_form_submission_url" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Social Media Links -->
+                <div class="social-media-container">
+                    <h3>Follow Me</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/a-gayatri-bhavana/" target="_blank" class="social-link">
+                            <div class="social-icon linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <span>LinkedIn</span>
+                        </a>
+                        
+                        <a href="https://github.com/Gayatri0116" target="_blank" class="social-link">
+                            <div class="social-icon github">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <span>GitHub</span>
+                        </a>
+
+                        
+                    </div>
+                </div>
+
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
